@@ -2,9 +2,9 @@ IPA de teste do meu jogo para iOS, com HS masculino/feminino e ESP Name até 150
 
 **Versão 2:** referência de integridade atualizada para o executável com HS/ESP. Use esta versão para repetir o teste de login no ESign.
 
-[Abrir o IPA para baixar](./meujogoHS-espname-iOS.ipa)
+[Abrir o IPA versão 2 para baixar](./meujogoHS-espname-iOS-v2.ipa)
 
-O arquivo `meujogoHS-espname-iOS.ipa` aparece na raiz deste repositório, ao lado deste README. Abra o arquivo e toque no botão de download (↓).
+O arquivo `meujogoHS-espname-iOS-v2.ipa` aparece na raiz deste repositório, ao lado deste README. Abra o arquivo e toque no botão de download (↓).
 
 [Download alternativo pela Release](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-hs-esp-1.28-teste2/meujogoHS-espname-iOS.ipa)
 
