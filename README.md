@@ -1,48 +1,39 @@
-Meu jogo para iOS com HS e ESP Name até 150 metros, fonte pequena e sem linha de distância.
+Meu jogo para iOS: HS e ESP Name, raio de 150 metros, fonte pequena e aliados amarelos.
 
-**V6 para testar: aliados em amarelo.**
+**V7 de teste — menu na tela**
 
-- Somente os nomes dos aliados recebem amarelo (#FFFF00), usando a identificação de equipe do próprio jogo.
-- Os demais nomes mantêm as cores que já tinham na V5.
-- A fonte, alcance, ícones de estado e rotina de HS/luneta da V5 são preservados.
+[Abrir o IPA V7 para baixar](./meujogoHS-espname-iOS-v7.ipa)
 
-[Abrir o IPA V6 para baixar](./meujogoHS-espname-iOS-v6.ipa)
+Abra o arquivo ao lado deste README e toque no botão de download (↓).
 
-O arquivo `meujogoHS-espname-iOS-v6.ipa` aparece ao lado deste README. Abra o arquivo e toque no botão de download (↓).
+[Download alternativo da V7 pela Release](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-hs-esp-1.28-teste7/meujogoHS-espname-iOS.ipa)
 
-[Download alternativo da V6 pela Release](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-hs-esp-1.28-teste6/meujogoHS-espname-iOS.ipa)
+Durante uma partida, aparece o botão **Menu** na lateral esquerda. Toque para abrir ou fechar as três opções:
 
-A alteração de cor passou em 12 testes ARM64 e 8 de integridade com APIs de cena simuladas. Ainda precisa ser confirmada no iPhone em uma partida com aliados.
+- **HS:** liga ou desliga o HS do peito. Desligado, peito e cabeça usam a classificação original, inclusive com luneta.
+- **ESP:** mostra ou oculta os nomes acima dos jogadores. Ligado, mantém 150 metros, fonte pequena e aliados amarelos; demais cores anteriores preservadas.
+- **HS com luneta:** com o HS principal ligado, permite HS também ao abrir a luneta. Desligado, o dano com luneta fica normal, como na V5.
 
-**Comportamento de HS/luneta herdado da V5:**
+Ao iniciar: **HS ligado**, **ESP ligado**, **HS com luneta desligado**. A terceira chave fica indisponível enquanto o HS principal estiver desligado. As opções reiniciam quando o processo do jogo é fechado.
 
-- Com a luneta aberta, o dano usa a classificação original: peito é peito, cabeça é cabeça.
-- Sem luneta, o peito usa o HS da V4.
-- A cabeça original e o ESP são preservados nos dois modos.
+Para testar no iPhone:
 
-[V5 preservada para baixar](./meujogoHS-espname-iOS-v5.ipa)
+1. No Safari conectado à sua conta do GitHub, baixe a V7.
+2. Importe no ESign, assine e instale usando as opções anteriores.
+3. Entre em uma partida e abra o botão Menu.
+4. Desligue/ligue o ESP e confira os nomes. Teste HS desligado, HS sem luneta e HS com luneta separadamente.
 
-**V4 confirmada pelo usuário e preservada:**
+**Validação local:** 103 testes com emulação ARM64 e APIs simuladas: 13 do menu/ações/layout, 41 de HS e alternância, 29 do ESP, 12 das cores e 8 de integridade. Os 5.424 arquivos do IPA foram conferidos; somente executável principal e referência de integridade do SDK mudaram em relação à V6.
 
-[Baixar V4](./meujogoHS-espname-iOS-v4.ipa)
+A interface e o comportamento real ainda precisam ser confirmados no iPhone. O IPA está sem assinatura; o ESign faz a assinatura para instalação.
 
-O usuário confirmou na V4 o HS no peito, a cabeça funcionando e o personagem sem deformações. O umbigo mantém dano de peito, podendo mostrar o indicador visual de capa. O arquivo sem sufixo de versão, `meujogoHS-espname-iOS.ipa`, também continua sendo a V4.
+**Versões anteriores preservadas**
 
-Para testar a V6 no iPhone:
+- [V6: aliados amarelos](./meujogoHS-espname-iOS-v6.ipa).
+- [V5: HS sem luneta e dano normal com luneta](./meujogoHS-espname-iOS-v5.ipa).
+- [V4 confirmada pelo usuário](./meujogoHS-espname-iOS-v4.ipa): HS do peito e cabeça funcionando, personagem sem deformação; umbigo mantém dano de peito e pode mostrar indicador visual de capa.
+- Outras versões: [V2](./meujogoHS-espname-iOS-v2.ipa), [V3](./meujogoHS-espname-iOS-v3.ipa).
 
-1. No Safari conectado à sua conta do GitHub, baixe o arquivo V6 e importe no ESign para assinar e instalar.
-2. Em uma partida com aliados, confira os nomes amarelos. Os demais devem continuar com suas cores anteriores.
-3. Abra a luneta e teste peito e cabeça com dano normal.
-4. Feche a luneta e confira se o HS do peito voltou.
+O arquivo sem sufixo de versão, `meujogoHS-espname-iOS.ipa`, continua sendo a V4 confirmada.
 
-A V5 passou em 24 testes ARM64 da alternância e ciclo de vida, 13 do ESP e 8 de integridade, com APIs simuladas. A alternância ainda precisa ser confirmada numa partida no iPhone.
-
-Outras versões preservadas: [V2](./meujogoHS-espname-iOS-v2.ipa), [V3](./meujogoHS-espname-iOS-v3.ipa).
-
-Os IPAs estão sem assinatura; a assinatura e a instalação são feitas pelo ESign.
-
-SHA-256 da V5: `6af0553c6b7b4d83f831d52f7749ba4fbde24186868d925640ced3d55eec9089`
-
-SHA-256 da V6: `c9e603c93d82b7cdbc9525b9c9028d3d7e71963ab03c404a2c31cee012f3b89a`
-
-SHA-256 da V4 preservada: `0de06c67a3b944a80566ef86af886c0c739121358a27781779f250cabe49a33d`
+SHA-256 da V7: `c292392a2b7b702e9ae8500b041fcd8641e7e758be49a234ec9bdc72e1a321eb`
