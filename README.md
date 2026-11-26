@@ -10,10 +10,10 @@ Ajustes do ESP ao espectar: origem no jogador observado, alternativa pela câmer
 
 **Radar Rush:** MP40 e M1014, feixe laranja. **Radar AR:** SCAR, AK-47, M4A1 e Groza, feixe verde. Gelo segue azul. Cada radar tem chave independente, alcance de 150 m, feixe de 25 m e capacidade para 64 modelos de itens no chão disponíveis ao cliente. A classificação das armas usa categoria e nome da configuração carregada em tempo de execução.
 
-**Squad Mapa Rd foi removida após a falha da V9 no teste do usuário.** Isso não comprova que seja impossível; ainda não houve correção validada no aparelho.
+**Squad Mapa Rd foi removida após a falha no teste do usuário.** Isso não comprova que seja impossível; ainda não houve correção validada no aparelho.
 
 **263 testes locais passaram com emulação ARM64 e APIs simuladas.** Os 5.424 membros do IPA foram verificados. O ESP após morte, os aliados amarelos e a identificação das armas ainda precisam de teste no iPhone. Não há confirmação de funcionamento desta V11 no aparelho.
 
 SHA-256: `8a6d34e1f19fa5d4ba9ac12b5d548a98f667fd56bfe21f61fcc28e5eac3fde57`
 
-Versões anteriores preservadas: [V2](./meujogoHS-espname-iOS-v2.ipa) · [V3](./meujogoHS-espname-iOS-v3.ipa) · [V4](./meujogoHS-espname-iOS-v4.ipa) · [V5](./meujogoHS-espname-iOS-v5.ipa) · [V6](./meujogoHS-espname-iOS-v6.ipa) · [V7](./meujogoHS-espname-iOS-v7.ipa) · [V8](./meujogoHS-espname-iOS-v8.ipa) · [V9](./meujogoHS-espname-iOS-v9.ipa). O arquivo `meujogoHS-espname-iOS.ipa` sem número continua sendo a V4 confirmada.
+Este repositório disponibiliza apenas a V11.
