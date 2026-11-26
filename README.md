@@ -12,11 +12,11 @@ Menu arrastável: botão 67, título Xit Boladin. Hs Peito, Esp Name, Hs + Mira,
 
 O login pelo Discord, os recursos e os segmentos originais da camada FFP de atualização foram preservados. As novas rotinas encaminham primeiro as chamadas à implementação original.
 
-Passaram 56 testes locais executando ARM64 com engine e UIKit simulados. Os 5.371 arquivos do IPA foram conferidos; somente o executável foi alterado. Isso não confirma login no aparelho nem dano aceito pelo servidor.
+Passaram 58 testes locais executando ARM64 com engine e UIKit simulados. Os 5.371 arquivos do IPA foram conferidos; somente o executável foi alterado. Isso não confirma login no aparelho nem dano aceito pelo servidor.
 
 Importe no ESign, assine com as mesmas opções usadas no original e instale. O executável está sem assinatura; a abertura após assinatura e os recursos ainda precisam de teste no iPhone.
 
-SHA-256: `01212fa85e8add65e49838d72d8b5a100f9f6e79184cd76774ed49f45bdd7af8`
+SHA-256: `545fde2874b06bfa4422c662459f79daef1a5fd94c8971b9008b653a201152ef`
 
 ## 2019 — versão 1.28, V11 corrigida 1
 
