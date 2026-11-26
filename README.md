@@ -1,6 +1,6 @@
 # Meu jogo iOS — 2019 e 2021
 
-As duas versões são independentes. Escolha o IPA correspondente ao seu servidor. Repositório privado.
+As duas versões são independentes. Escolha o IPA correspondente ao seu servidor. Repositório público; downloads disponíveis sem login.
 
 ## 2021 — versão 1.60.1, V1 de teste
 
