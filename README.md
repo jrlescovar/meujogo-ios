@@ -1,19 +1,17 @@
-# Meu jogo iOS — V11 de teste
+# Meu jogo iOS — V11 corrigida 1
 
-[Arquivo V11](./meujogoHS-espname-iOS-v11.ipa) · [Release V11](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-hs-esp-1.28-teste11) · [Download da release](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-hs-esp-1.28-teste11/meujogoHS-espname-iOS.ipa)
+[Arquivo V11](./meujogoHS-espname-iOS-v11.ipa) · [Release V11](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-hs-esp-1.28-teste11) · [Download](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-hs-esp-1.28-teste11/meujogoHS-espname-iOS.ipa)
 
-Entre na sua conta GitHub, baixe o IPA e importe no ESign para assinar e instalar. O repositório é privado; o IPA precisa de assinatura.
+Baixe a nova cópia, importe no ESign, assine e instale. Repositório privado; somente V11 disponibilizada. A cópia anterior está preservada localmente.
 
 Botão **67**, título **Xit Boladin**, menu arrastável. Ordem: **Hs Peito → Esp Name → Hs + Mira → Radar Gelo → Radar Rush → Radar AR**.
 
-Ajustes do ESP ao espectar: origem no jogador observado, alternativa pela câmera e atualização pelo timer quando cessam os quadros do jogador local. Os aliados também passam a ser reconhecidos pelos IDs enviados ao HUD nativo, para manter amarelo mesmo ao cair. As demais cores existentes foram preservadas.
+**Somente Hs Peito e Esp Name iniciam ligados.** Hs + Mira e os três radares iniciam desligados.
 
-**Radar Rush:** MP40 e M1014, feixe laranja. **Radar AR:** SCAR, AK-47, M4A1 e Groza, feixe verde. Gelo segue azul. Cada radar tem chave independente, alcance de 150 m, feixe de 25 m e capacidade para 64 modelos de itens no chão disponíveis ao cliente. A classificação das armas usa categoria e nome da configuração carregada em tempo de execução.
+**Correção dos aliados:** a coleta anterior em AddTeammateHud também recebia etiquetas de inimigos. Agora a identificação usa as chaves da lista real do painel de squad, capturada em UIHudTeammatesInfoController.OnUIOpen/OnDataChanged. Sem classificação por prefixo do ID. Códigos de cor embutidos nos apelidos são removidos dos nomes monitorados. Os nomes de aliados no ESP e no painel lateral ficam amarelos; ícones de estado e marcadores do squad são preservados.
 
-**Squad Mapa Rd foi removida após a falha no teste do usuário.** Isso não comprova que seja impossível; ainda não houve correção validada no aparelho.
+**Radar Rush:** MP40 e M1014, laranja. **Radar AR:** SCAR, **AK**, M4A1 e Groza, verde. O identificador interno antigo AK47 também é aceito. Gelo segue azul. Chaves independentes, 150 m de alcance, feixe de 25 m, até 64 itens no chão por radar disponíveis ao cliente. Ajustes anteriores do ESP ao espectar mantidos. Squad Mapa Rd removido.
 
-**263 testes locais passaram com emulação ARM64 e APIs simuladas.** Os 5.424 membros do IPA foram verificados. O ESP após morte, os aliados amarelos e a identificação das armas ainda precisam de teste no iPhone. Não há confirmação de funcionamento desta V11 no aparelho.
+**264 testes locais passaram com emulação ARM64 e APIs simuladas.** Os 5.424 membros do IPA foram verificados. As correções ainda precisam ser confirmadas no iPhone.
 
-SHA-256: `8a6d34e1f19fa5d4ba9ac12b5d548a98f667fd56bfe21f61fcc28e5eac3fde57`
-
-Este repositório disponibiliza apenas a V11.
+SHA-256: `5dd47f950049af8c122a579594d81125992c9d7ff07c54a856c8e52f53d53dd9`
