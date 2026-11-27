@@ -2,25 +2,21 @@
 
 As versões são independentes. Escolha o IPA correspondente ao seu servidor. Repositório público; downloads disponíveis sem login.
 
-## 2026 — versão 1.132.1, Teste 2
+## 2026 — versão 1.132.1, Teste 2 revisão 1
 
-**Para comparar a entrada:** [baixar a IPA original recebida — Versao2026.ipa](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-original/Versao2026.ipa), com 631.355.060 bytes, sem alterar nenhum byte do arquivo fornecido.
+[Arquivo IPA 2026 — meujogo2026.ipa](./meujogo2026.ipa) · [Baixar diretamente](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste2-rev1/meujogo2026.ipa) · [Release e instruções](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste2-rev1)
 
-**Diagnóstico atual:** o usuário informou que o Teste 2 e a base de controle também ficaram presos após o login. A causa continua sem confirmação; a IPA original será testada para comparação.
-
-[Baixar Teste 2 — HS e ESP](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste2/meujogo-2026-HS-ESP-teste2.ipa) · [Release e instruções](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste2)
-
-O Teste 2 adia as consultas do HS até existir uma partida e um jogador válidos. Essa mudança não resolveu o carregamento no aparelho do usuário.
+Revisão da inicialização do Teste 2. O executável principal foi reconstruído com a estrutura e as dependências originais, usando o código já legível da referência fornecida. O segmento extra herdado da referência foi removido. **Somente o executável principal mudou em relação ao Teste 2**; o framework das três funções e os outros 3.474 membros do IPA foram conferidos por SHA-256 e permanecem iguais.
 
 Menu **67 / Xit Boladin**: **Hs Peito**, **Esp Name** e **Hs + Mira**. HS Peito e ESP começam ligados; HS + Mira começa desligado. Alcance de 150 m. O menu pode aparecer somente após carregar o jogador. Radar Gelo não está incluído.
 
-Se o Teste 2 continuar preso, baixe a [base de controle — sem HS, ESP ou menu](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste2/meujogo-2026-base-controle.ipa). Ela usa a mesma base, sem os quatro hooks JR, para isolar o problema. **Na base de controle não aparece botão 67.**
+**Para testar:** importe este novo `meujogo2026.ipa` no ESign, assine e instale usando as mesmas opções do Teste 2. Primeiro verifique se a cópia passa do carregamento após o login e entra no lobby; depois entre numa partida para testar as funções. A checagem estrutural e oito cenários de inicialização ARM64 passaram localmente, com Foundation/Unity simulados. As 63 verificações anteriores das funções continuam associadas ao mesmo framework, que não foi alterado. Isso não confirma login no aparelho nem dano aceito pelo servidor.
 
-Importe a cópia escolhida no **ESign** e use as mesmas opções de assinatura do Teste 1. Passaram **63 verificações ARM64 emuladas**; isso não valida o login real nem o dano no servidor.
+**Diagnóstico:** o Teste 2 anterior e a base sem funções ficaram presos após o login; a IPA original exata fechou ao abrir e mostrou aviso de código criptografado no ESign. A revisão atual ainda precisa de teste no iPhone; a causa do carregamento preso não está confirmada. O código de login e as decisões de integridade não foram alterados.
 
-SHA-256 Teste 2: `d604c643c5223f61ba15812f62bb22787dbbd8400e19bae91f4f653fe415bbd8`
+[Teste 2 anterior e base de controle](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste2) · [IPA original exata recebida](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-original/Versao2026.ipa)
 
-SHA-256 controle: `74dba7bb0b917db6154cce6856e4b57219e1574ce3527a78d5731ff732e6de0d`
+SHA-256 desta revisão: `c21e9d876bfd5ba89ba02f85c3f426af9b44ec42f790b24e59a65f4148af7e7f`
 
 ## 2021 — versão 1.60.1, V1 de teste
 
