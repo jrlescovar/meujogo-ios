@@ -2,17 +2,21 @@
 
 As versões são independentes. Escolha o IPA correspondente ao seu servidor. Repositório público; downloads disponíveis sem login.
 
-## 2026 — versão 1.132.1, Teste 1
+## 2026 — versão 1.132.1, Teste 2
 
-[Baixar IPA 2026](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste1/meujogo-2026-HS-ESP-teste1.ipa) · [Release 2026](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste1)
+[Baixar Teste 2 — HS e ESP](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste2/meujogo-2026-HS-ESP-teste2.ipa) · [Release e instruções](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste2)
 
-Menu arrastável **67 / Xit Boladin**, com **Hs Peito**, **Esp Name** e **Hs + Mira**. HS Peito e ESP começam ligados; HS + Mira começa desligado. ESP com alcance de 150 m, nomes pequenos e distância calculada no cliente. Radar Gelo não está incluído neste teste.
+O Teste 1 ficou preso no carregamento após o login no aparelho do usuário. O Teste 2 adia as consultas do HS até existir uma partida e um jogador válidos. A causa do travamento ainda não foi confirmada; esta versão precisa de teste no iPhone.
 
-Baixe a IPA, importe no **ESign**, assine com as mesmas configurações do original e instale. Passaram **57 verificações ARM64 emuladas**; instalação, login e dano aceito pelo servidor ainda precisam de teste no iPhone.
+Menu **67 / Xit Boladin**: **Hs Peito**, **Esp Name** e **Hs + Mira**. HS Peito e ESP começam ligados; HS + Mira começa desligado. Alcance de 150 m. O menu pode aparecer somente após carregar o jogador. Radar Gelo não está incluído.
 
-Arquivo: `meujogo-2026-HS-ESP-teste1.ipa` — 475,7 MiB.
+Se o Teste 2 continuar preso, baixe a [base de controle — sem HS, ESP ou menu](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste2/meujogo-2026-base-controle.ipa). Ela usa a mesma base, sem os quatro hooks JR, para isolar o problema. **Na base de controle não aparece botão 67.**
 
-SHA-256: `2d1919e9a0d58149db32674b70d7bbc5e8e4f9c7111aee2fdf2eb0468228188b`
+Importe a cópia escolhida no **ESign** e use as mesmas opções de assinatura do Teste 1. Passaram **63 verificações ARM64 emuladas**; isso não valida o login real nem o dano no servidor.
+
+SHA-256 Teste 2: `d604c643c5223f61ba15812f62bb22787dbbd8400e19bae91f4f653fe415bbd8`
+
+SHA-256 controle: `74dba7bb0b917db6154cce6856e4b57219e1574ce3527a78d5731ff732e6de0d`
 
 ## 2021 — versão 1.60.1, V1 de teste
 
