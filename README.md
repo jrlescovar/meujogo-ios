@@ -4,9 +4,13 @@ As versões são independentes. Escolha o IPA correspondente ao seu servidor. Re
 
 ## 2026 — versão 1.132.1, Teste 2
 
+**Para comparar a entrada:** [baixar a IPA original recebida — Versao2026.ipa](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-original/Versao2026.ipa), com 631.355.060 bytes, sem alterar nenhum byte do arquivo fornecido.
+
+**Diagnóstico atual:** o usuário informou que o Teste 2 e a base de controle também ficaram presos após o login. A causa continua sem confirmação; a IPA original será testada para comparação.
+
 [Baixar Teste 2 — HS e ESP](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste2/meujogo-2026-HS-ESP-teste2.ipa) · [Release e instruções](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste2)
 
-O Teste 1 ficou preso no carregamento após o login no aparelho do usuário. O Teste 2 adia as consultas do HS até existir uma partida e um jogador válidos. A causa do travamento ainda não foi confirmada; esta versão precisa de teste no iPhone.
+O Teste 2 adia as consultas do HS até existir uma partida e um jogador válidos. Essa mudança não resolveu o carregamento no aparelho do usuário.
 
 Menu **67 / Xit Boladin**: **Hs Peito**, **Esp Name** e **Hs + Mira**. HS Peito e ESP começam ligados; HS + Mira começa desligado. Alcance de 150 m. O menu pode aparecer somente após carregar o jogador. Radar Gelo não está incluído.
 
