@@ -1,6 +1,18 @@
-# Meu jogo iOS — 2019 e 2021
+# Meu jogo iOS — 2019, 2021 e 2026
 
-As duas versões são independentes. Escolha o IPA correspondente ao seu servidor. Repositório público; downloads disponíveis sem login.
+As versões são independentes. Escolha o IPA correspondente ao seu servidor. Repositório público; downloads disponíveis sem login.
+
+## 2026 — versão 1.132.1, Teste 1
+
+[Baixar IPA 2026](https://github.com/jrlescovar/meujogo-ios/releases/download/ios-2026-1.132.1-teste1/meujogo-2026-HS-ESP-teste1.ipa) · [Release 2026](https://github.com/jrlescovar/meujogo-ios/releases/tag/ios-2026-1.132.1-teste1)
+
+Menu arrastável **67 / Xit Boladin**, com **Hs Peito**, **Esp Name** e **Hs + Mira**. HS Peito e ESP começam ligados; HS + Mira começa desligado. ESP com alcance de 150 m, nomes pequenos e distância calculada no cliente. Radar Gelo não está incluído neste teste.
+
+Baixe a IPA, importe no **ESign**, assine com as mesmas configurações do original e instale. Passaram **57 verificações ARM64 emuladas**; instalação, login e dano aceito pelo servidor ainda precisam de teste no iPhone.
+
+Arquivo: `meujogo-2026-HS-ESP-teste1.ipa` — 475,7 MiB.
+
+SHA-256: `2d1919e9a0d58149db32674b70d7bbc5e8e4f9c7111aee2fdf2eb0468228188b`
 
 ## 2021 — versão 1.60.1, V1 de teste
 
